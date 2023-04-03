@@ -1,14 +1,6 @@
-let input = document.querySelector('input')
+const numberOfFilms = +window.prompt('Сколько фильмов вы уже посмотрели?', '')
 
-let numberOfFilms = window.prompt('Сколько фильмов вы уже посмотрели?')
-
-let firstMovie = window.prompt('Один из последних просмотренных фильмов?')
-let firstRate = window.prompt('На сколько его оцените?')
-let secondMovie = window.prompt('Один из последних просмотренных фильмов?')
-let secondRate = window.prompt('На сколько его оцените?')
-
-
-let personalMovieDB = {
+const personalMovieDB = {
   count: numberOfFilms,
   movies: {},
   actors: {},
@@ -16,7 +8,7 @@ let personalMovieDB = {
   privat: false
 }
 
-personalMovieDB.movies[firstMovie] = firstRate
-personalMovieDB.movies[secondMovie] = secondRate
+personalMovieDB.movies[window.prompt('Один из последних просмотренных фильмов?')] = window.prompt('На сколько его оцените?')
+personalMovieDB.movies[window.prompt('Один из последних просмотренных фильмов?')] = window.prompt('На сколько его оцените?')
 
 console.log(personalMovieDB)
