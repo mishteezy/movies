@@ -8,7 +8,8 @@ const personalMovieDB = {
   privat: false
 }
 
-personalMovieDB.movies[window.prompt('Один из последних просмотренных фильмов?', '')] = +window.prompt('На сколько его оцените?', '')
-personalMovieDB.movies[window.prompt('Один из последних просмотренных фильмов?', '')] = +window.prompt('На сколько его оцените?', '')
+for (let i = 0; i < 2; i++) {
+  personalMovieDB.movies[window.prompt('Один из последних просмотренных фильмов?', '')] = +window.prompt('На сколько его оцените?', '')
+}
 
 console.log(personalMovieDB)
